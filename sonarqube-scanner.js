@@ -5,6 +5,7 @@ scanner(
 
         options: {
             "sonar.organization": "akashudayan",
+            "sonar.projectKey": "akashudayan_sonar-sample",
             "sonar.sources": "./src",
             "sonar.exclusions": "**/*.test.tsx",
             "sonar.tests": "./src",
