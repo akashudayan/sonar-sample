@@ -4,6 +4,7 @@ scanner(
         serverUrl: process.argv[2],
 
         options: {
+            "sonar.organization":"my-app",
             "sonar.sources": "./src",
             "sonar.exclusions": "**/*.test.tsx",
             "sonar.tests": "./src",
