@@ -22,7 +22,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn
       - run: yarn test
-      - run: yarn sonar ${{secrets.SONAR_TOKEN}}
+      - run: yarn sonar https://sonarcloud.io/
       - run: yarn build
 
   sonarcloud:
