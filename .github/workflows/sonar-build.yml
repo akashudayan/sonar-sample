@@ -24,7 +24,7 @@ jobs:
       - run: yarn test
       - run: yarn sonar https://sonarcloud.io/
       - run: yarn build
-      env:
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
