@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="D:\Learning\React\sonar-sample\src\App.test.tsx">
+    <testCase name="renders learn react link" duration="25"/>
+  </file>
+</testExecutions>

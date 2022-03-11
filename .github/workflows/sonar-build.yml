@@ -21,9 +21,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn
-      - run: yarn test --watchAll=false --coverage
+      - run: yarn test
+      - run: yarn sonar ${{secrets.SONAR_TOKEN}}
       - run: yarn build
-        
+
   sonarcloud:
     needs: build
     name: SonarCloud
