@@ -25,6 +25,7 @@ jobs:
       - run: yarn build
         
   sonarcloud:
+    needs: build
     name: SonarCloud
     runs-on: ubuntu-latest
     steps:
